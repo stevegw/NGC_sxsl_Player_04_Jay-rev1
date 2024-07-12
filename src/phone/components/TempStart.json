@@ -1,0 +1,545 @@
+{
+  "attributes": {
+    "twx-widget": "",
+    "widget-id": "view-2",
+    "widget-name": "view-2",
+    "is-widget-container": "true",
+    "viewtype": "mobile-2D"
+  },
+  "children": [
+    {
+      "name": "twx-container-content",
+      "children": [
+        {
+          "attributes": {
+            "twx-widget": "",
+            "widget-id": "popup-1",
+            "widget-name": "popup-1",
+            "is-widget-container": "true",
+            "visible": "true"
+          },
+          "name": "twx-popup",
+          "children": [
+            {
+              "attributes": {
+                "class": "twx-widget-bindings",
+                "slot": "bindings",
+                "ptc-rendered": ""
+              },
+              "name": "twx-widget-bindings"
+            },
+            {
+              "name": "twx-container-content",
+              "children": [
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "gridLayout-1",
+                    "widget-name": "gridLayout-1",
+                    "is-widget-container": "true"
+                  },
+                  "name": "twx-gridlayout",
+                  "children": [
+                    {
+                      "attributes": {
+                        "class": "twx-widget-bindings",
+                        "slot": "bindings",
+                        "ptc-rendered": ""
+                      },
+                      "name": "twx-widget-bindings"
+                    },
+                    {
+                      "name": "twx-container-content",
+                      "children": [
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "row-7",
+                            "widget-name": "row-7",
+                            "is-widget-container": "true"
+                          },
+                          "name": "twx-row",
+                          "children": [
+                            {
+                              "attributes": {
+                                "class": "twx-widget-bindings",
+                                "slot": "bindings",
+                                "ptc-rendered": ""
+                              },
+                              "name": "twx-widget-bindings"
+                            },
+                            {
+                              "name": "twx-container-content",
+                              "children": [
+                                {
+                                  "attributes": {
+                                    "twx-widget": "",
+                                    "widget-id": "column-14",
+                                    "widget-name": "column-14",
+                                    "is-widget-container": "true",
+                                    "flexdirection": "row",
+                                    "justification": "center",
+                                    "alignment": "center",
+                                    "padding": "20px"
+                                  },
+                                  "name": "twx-col",
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "class": "twx-widget-bindings",
+                                        "slot": "bindings",
+                                        "ptc-rendered": ""
+                                      },
+                                      "name": "twx-widget-bindings"
+                                    },
+                                    {
+                                      "name": "twx-container-content",
+                                      "children": [
+                                        {
+                                          "attributes": {
+                                            "twx-widget": "",
+                                            "widget-id": "label-3",
+                                            "state-format-value": "text",
+                                            "widget-name": "label-3",
+                                            "text": "Temp Start Window for Testing",
+                                            "class": "simple-label large"
+                                          },
+                                          "name": "twx-label"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "row-6",
+                            "widget-name": "row-6",
+                            "is-widget-container": "true"
+                          },
+                          "name": "twx-row",
+                          "children": [
+                            {
+                              "attributes": {
+                                "class": "twx-widget-bindings",
+                                "slot": "bindings",
+                                "ptc-rendered": ""
+                              },
+                              "name": "twx-widget-bindings"
+                            },
+                            {
+                              "name": "twx-container-content",
+                              "children": [
+                                {
+                                  "attributes": {
+                                    "twx-widget": "",
+                                    "widget-id": "column-12",
+                                    "widget-name": "column-12",
+                                    "is-widget-container": "true",
+                                    "flexdirection": "row",
+                                    "justification": "center",
+                                    "alignment": "center",
+                                    "fixedcolsize": "15%",
+                                    "wrap": "no-wrap",
+                                    "padding": "3px"
+                                  },
+                                  "name": "twx-col",
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "class": "twx-widget-bindings",
+                                        "slot": "bindings",
+                                        "ptc-rendered": ""
+                                      },
+                                      "name": "twx-widget-bindings"
+                                    },
+                                    {
+                                      "name": "twx-container-content"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "attributes": {
+                                    "twx-widget": "",
+                                    "widget-id": "column-11",
+                                    "widget-name": "column-11",
+                                    "is-widget-container": "true",
+                                    "justification": "center",
+                                    "fixedcolsize": "70%",
+                                    "padding": "3px"
+                                  },
+                                  "name": "twx-col",
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "class": "twx-widget-bindings",
+                                        "slot": "bindings",
+                                        "ptc-rendered": ""
+                                      },
+                                      "name": "twx-widget-bindings"
+                                    },
+                                    {
+                                      "name": "twx-container-content",
+                                      "children": [
+                                        {
+                                          "attributes": {
+                                            "twx-widget": "",
+                                            "widget-id": "select-1",
+                                            "widget-name": "select-1",
+                                            "list": "",
+                                            "valuefield": "file",
+                                            "displayfield": "show",
+                                            "label": "Which JSON to Use:"
+                                          },
+                                          "name": "twx-select"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "attributes": {
+                                    "twx-widget": "",
+                                    "widget-id": "column-13",
+                                    "widget-name": "column-13",
+                                    "is-widget-container": "true",
+                                    "flexdirection": "row",
+                                    "justification": "center",
+                                    "alignment": "center",
+                                    "fixedcolsize": "15%",
+                                    "wrap": "no-wrap",
+                                    "padding": "3px"
+                                  },
+                                  "name": "twx-col",
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "class": "twx-widget-bindings",
+                                        "slot": "bindings",
+                                        "ptc-rendered": ""
+                                      },
+                                      "name": "twx-widget-bindings"
+                                    },
+                                    {
+                                      "name": "twx-container-content"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "row-3",
+                            "widget-name": "row-3",
+                            "is-widget-container": "true"
+                          },
+                          "name": "twx-row",
+                          "children": [
+                            {
+                              "attributes": {
+                                "class": "twx-widget-bindings",
+                                "slot": "bindings",
+                                "ptc-rendered": ""
+                              },
+                              "name": "twx-widget-bindings"
+                            },
+                            {
+                              "name": "twx-container-content",
+                              "children": [
+                                {
+                                  "attributes": {
+                                    "twx-widget": "",
+                                    "widget-id": "column-3",
+                                    "widget-name": "column-3",
+                                    "is-widget-container": "true",
+                                    "flexdirection": "row",
+                                    "justification": "center",
+                                    "alignment": "center",
+                                    "padding": "3px"
+                                  },
+                                  "name": "twx-col",
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "class": "twx-widget-bindings",
+                                        "slot": "bindings",
+                                        "ptc-rendered": ""
+                                      },
+                                      "name": "twx-widget-bindings"
+                                    },
+                                    {
+                                      "name": "twx-container-content"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "attributes": {
+                                    "twx-widget": "",
+                                    "widget-id": "column-6",
+                                    "widget-name": "column-6",
+                                    "is-widget-container": "true",
+                                    "class": "",
+                                    "flexdirection": "row",
+                                    "justification": "flex-end",
+                                    "alignment": "center",
+                                    "padding": "12px"
+                                  },
+                                  "name": "twx-col",
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "class": "twx-widget-bindings",
+                                        "slot": "bindings",
+                                        "ptc-rendered": ""
+                                      },
+                                      "name": "twx-widget-bindings"
+                                    },
+                                    {
+                                      "name": "twx-container-content",
+                                      "children": [
+                                        {
+                                          "attributes": {
+                                            "twx-widget": "",
+                                            "widget-id": "checkbox-1",
+                                            "widget-name": "checkbox-1",
+                                            "label": "Resume (Y/N)",
+                                            "padding": "10px 10px 10px 50px"
+                                          },
+                                          "name": "twx-checkbox"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "attributes": {
+                                    "twx-widget": "",
+                                    "widget-id": "column-7",
+                                    "widget-name": "column-7",
+                                    "is-widget-container": "true",
+                                    "flexdirection": "row",
+                                    "justification": "flex-end",
+                                    "alignment": "center",
+                                    "padding": "3px"
+                                  },
+                                  "name": "twx-col",
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "class": "twx-widget-bindings",
+                                        "slot": "bindings",
+                                        "ptc-rendered": ""
+                                      },
+                                      "name": "twx-widget-bindings"
+                                    },
+                                    {
+                                      "name": "twx-container-content",
+                                      "children": [
+                                        {
+                                          "attributes": {
+                                            "twx-widget": "",
+                                            "widget-id": "label-2",
+                                            "state-format-value": "text",
+                                            "widget-name": "label-2",
+                                            "text": "Resume Step #:"
+                                          },
+                                          "name": "twx-label"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "attributes": {
+                                    "twx-widget": "",
+                                    "widget-id": "column-8",
+                                    "widget-name": "column-8",
+                                    "is-widget-container": "true",
+                                    "flexdirection": "row",
+                                    "alignment": "center",
+                                    "padding": "3px"
+                                  },
+                                  "name": "twx-col",
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "class": "twx-widget-bindings",
+                                        "slot": "bindings",
+                                        "ptc-rendered": ""
+                                      },
+                                      "name": "twx-widget-bindings"
+                                    },
+                                    {
+                                      "name": "twx-container-content",
+                                      "children": [
+                                        {
+                                          "attributes": {
+                                            "twx-widget": "",
+                                            "widget-id": "textInput-1",
+                                            "widget-name": "textInput-1",
+                                            "text": "3",
+                                            "placeholder": "Step #",
+                                            "label": "Step #"
+                                          },
+                                          "name": "twx-text-input",
+                                          "children": [
+                                            {
+                                              "attributes": {
+                                                "databind-id": "db-1720186813716",
+                                                "source-type": "ui",
+                                                "source-label": "Checkbox",
+                                                "source-name": "checkbox-1",
+                                                "source-item-type": "property",
+                                                "source-item-name": "value",
+                                                "source-item-field-name": "",
+                                                "binding-type": "widget_property",
+                                                "from-expression": "app.view['TempStart'].wdg['checkbox-1']['value']",
+                                                "to-property": "visible",
+                                                "base-type": "",
+                                                "shape": ""
+                                              },
+                                              "name": "twx-databind"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "attributes": {
+                                    "twx-widget": "",
+                                    "widget-id": "column-9",
+                                    "widget-name": "column-9",
+                                    "is-widget-container": "true",
+                                    "padding": "3px"
+                                  },
+                                  "name": "twx-col",
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "class": "twx-widget-bindings",
+                                        "slot": "bindings",
+                                        "ptc-rendered": ""
+                                      },
+                                      "name": "twx-widget-bindings"
+                                    },
+                                    {
+                                      "name": "twx-container-content"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "row-5",
+                            "widget-name": "row-5",
+                            "is-widget-container": "true"
+                          },
+                          "name": "twx-row",
+                          "children": [
+                            {
+                              "attributes": {
+                                "class": "twx-widget-bindings",
+                                "slot": "bindings",
+                                "ptc-rendered": ""
+                              },
+                              "name": "twx-widget-bindings"
+                            },
+                            {
+                              "name": "twx-container-content",
+                              "children": [
+                                {
+                                  "attributes": {
+                                    "twx-widget": "",
+                                    "widget-id": "column-5",
+                                    "widget-name": "column-5",
+                                    "is-widget-container": "true",
+                                    "flexdirection": "row",
+                                    "justification": "center",
+                                    "alignment": "center",
+                                    "padding": "30px"
+                                  },
+                                  "name": "twx-col",
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "class": "twx-widget-bindings",
+                                        "slot": "bindings",
+                                        "ptc-rendered": ""
+                                      },
+                                      "name": "twx-widget-bindings"
+                                    },
+                                    {
+                                      "name": "twx-container-content",
+                                      "children": [
+                                        {
+                                          "attributes": {
+                                            "twx-widget": "",
+                                            "widget-id": "button-1",
+                                            "widget-name": "button-1",
+                                            "text": "Start Test"
+                                          },
+                                          "name": "twx-button",
+                                          "children": [
+                                            {
+                                              "attributes": {
+                                                "eventbind-id": "eb-1720187666513",
+                                                "source-type": "widget",
+                                                "source-label": "Button",
+                                                "source-name": "button-1",
+                                                "source-event": "click",
+                                                "handler-type": "",
+                                                "handler-namespace": "app",
+                                                "handler-name": "fn",
+                                                "handler-service": "navigate",
+                                                "handler-path": "app-fn-navigate"
+                                              },
+                                              "name": "twx-eventbind",
+                                              "children": [
+                                                {
+                                                  "attributes": {
+                                                    "name": "viewname",
+                                                    "value": "Start"
+                                                  },
+                                                  "name": "twx-event-data"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "twx-view-data"
+    }
+  ],
+  "name": "twx-view"
+}

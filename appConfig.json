@@ -1,0 +1,69 @@
+{
+  "name": "NGC_sxsl_Player_04_Jay-rev1",
+  "projectType": "AR",
+  "viewType": "ar",
+  "fileName": "NGC_sxsl_Player_04_Jay-rev1",
+  "thingworxServer": "http://pp-2309291349ae.portal.ptc.io",
+  "viewTemplateFileName": "home-ar.json",
+  "state": {
+    "orientation": "landscape"
+  },
+  "targets": {
+    "phone": {
+      "components": [
+        {
+          "name": "Home",
+          "fileName": "Home",
+          "showInMainMenu": true,
+          "viewType": "ar",
+          "title": "Home"
+        },
+        {
+          "name": "TempStart",
+          "fileName": "TempStart",
+          "showInMainMenu": true,
+          "viewType": "mobile-2D",
+          "title": "TempStart"
+        },
+        {
+          "name": "Start",
+          "fileName": "Start",
+          "showInMainMenu": true,
+          "viewType": "mobile-2D",
+          "title": "Start"
+        }
+      ],
+      "images": []
+    },
+    "shared": {
+      "components": [
+        {
+          "name": "Data",
+          "fileName": "Data"
+        }
+      ],
+      "images": [],
+      "styles": [
+        {
+          "name": "App",
+          "fileName": "App",
+          "fileExt": "scss"
+        }
+      ]
+    }
+  },
+  "device": {
+    "name": "ipad",
+    "width": "1024",
+    "height": "768"
+  },
+  "mainNavigationMenuStyle": "noMenu",
+  "resourceDirectory": "src/phone/resources",
+  "resourceRuntimeDir": "app/resources",
+  "fontRuntimeDir": "../fonts",
+  "fontDesigntimeDir": "../dist/fonts",
+  "theme": "twx-light",
+  "version": "9.20.11.0",
+  "designedForOffline": true,
+  "id": "6d01cd7a-1085-4288-9c0b-5bf665f9cca5"
+}

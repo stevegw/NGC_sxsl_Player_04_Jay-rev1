@@ -1,0 +1,131 @@
+{
+    "thumbnail": "logo.png",
+    "versionId": "49eb56b5-581c-4f8c-ab5a-42ce76177e9d",
+    "publishDate": "2024-01-19T14:10:34.461Z",
+    "sxslVersion": "2.0",
+    "introduction": {
+      "resources": [
+        {
+          "mimeType": "text/plain",
+          "text": "NGC Rocket Processing Demo."
+        }
+      ]
+    },
+    "description": "NGC Demo from SOWI",
+    "statements": [
+      {
+        "stepId": "jjd85e74-bcc6-42f7-8573-a526009fedde",
+        "type": "Step"
+      }
+    ],
+    "contexts": {
+      "mycontext": {
+        "assets": {
+          "rocket.seq": {
+            "resources": [
+              {
+                "composition": "partset",
+                "modelUrl": "eb_seq.pvz",
+                "mimeType": "application/vnd.ptc.pvz",
+                "sceneName": "l-Creo 3D - Figure 1.pvi"
+              }
+            ]
+          }
+        },
+        "models": [
+          {
+            "mimeType": "model/pvz",
+            "tags": [
+              "occlusion",
+              "full"
+            ],
+            "url": "EngineBlock.pvz"
+          }
+        ],
+        "trackers": [
+          {
+            "mimeType": "application/vnd.ptc.tracker.modeltracker",
+            "content": {
+              "dataset": {
+                "xml": "EngineBlock.xml",
+                "dat": "EngineBlock.dat"
+              },
+              "targetName": "EngineBlock",
+              "guideView": {
+                "mimeType": "image/png",
+                "url": "EngineBlock_viewpoint_0001_2.png",
+                "lang": "en-US"
+              }
+            },
+            "guideView": {
+              "mimeType": "image/png",
+              "url": "EngineBlock_viewpoint_0001_2.png",
+              "lang": "en-US"
+            }
+          }
+        ]
+      }
+    },
+    "id": "Procedure_ZMfWVRAw",
+    "title": {
+      "resources": [
+        {
+          "text": "SFARWI Vendor Use Case 2"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "id": "jjd85e74-bcc6-42f7-8573-a526009fedde",
+        "title": {
+          "resources": [
+            {
+              "mimeType": "text/plain",
+              "text": "Op 0070 (SubSteps)"
+            }
+          ]
+        },
+        "actions": [
+          {
+            "id": "0055_SerialNo_Check_Mack-action",
+            "type": "Verify",
+            "instructions": {
+              "resources": [
+                {
+                  "mimeType": "text/plain",
+                  "text": "Action / SubStep 6. Capture a Number (serial) that must match a predefined pattern.  <strong>(CaptureString- REGEX)</strong>"
+                }
+              ]
+            },
+            "details": {
+              "type": "CaptureString",
+              "tool": "barcode",
+              "title": {
+                "resources": [
+                  {
+                    "mimeType": "text/plain",
+                    "text": "Serial Number"
+                  }
+                ]
+              },
+              "ID": "serialNumber",
+              "required": true,
+              "regex": "^[0-9]{3}-[0-9]{5}$",
+              "hint": {
+                "instructions": {
+                  "resources": [
+                    {
+                      "mimeType": "text/plain",
+                      "text": "Use format 123-45678"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "orgId": "80d2567c-d0b2-4b72-8bc6-e021f579485a",
+    "versionDisplayName": 1
+  }

@@ -1,0 +1,126 @@
+{
+  "attributes": {
+    "namespace": "app.mdl"
+  },
+  "children": [
+    {
+      "attributes": {
+        "id": "vumark",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "ThingMark",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "template",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing Template",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "thing",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "prevRun",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "prevRun",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "activeJSON",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "activeJSON",
+        "value": ""
+      },
+      "name": "twx-app-param",
+      "children": [
+        {
+          "attributes": {
+            "databind-id": "db-7d92bc18-be72-4018-8c5e-cb50b6e53059",
+            "source-type": "ui",
+            "source-label": "Select",
+            "source-name": "select-1",
+            "source-item-type": "property",
+            "source-item-name": "value",
+            "binding-type": "widget_property",
+            "from-expression": "app.view['TempStart'].wdg['select-1']['value']",
+            "to-property": "app.params['activeJSON']"
+          },
+          "name": "twx-databind"
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "id": "resume",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "resume",
+        "value": "false"
+      },
+      "name": "twx-app-param",
+      "children": [
+        {
+          "attributes": {
+            "databind-id": "db-c46daa49-0ae0-485a-b511-ea91fefe06ef",
+            "source-type": "ui",
+            "source-label": "Checkbox",
+            "source-name": "checkbox-1",
+            "source-item-type": "property",
+            "source-item-name": "value",
+            "binding-type": "widget_property",
+            "from-expression": "app.view['TempStart'].wdg['checkbox-1']['value']",
+            "to-property": "app.params['resume']"
+          },
+          "name": "twx-databind"
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "id": "resumestep",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "resumestep",
+        "value": ""
+      },
+      "name": "twx-app-param",
+      "children": [
+        {
+          "attributes": {
+            "databind-id": "db-5db4603e-5158-4731-875c-3f23a232848d",
+            "source-type": "ui",
+            "source-label": "Text Input",
+            "source-name": "textInput-1",
+            "source-item-type": "property",
+            "source-item-name": "text",
+            "binding-type": "widget_property",
+            "from-expression": "app.view['TempStart'].wdg['textInput-1']['text']",
+            "to-property": "app.params['resumestep']"
+          },
+          "name": "twx-databind"
+        }
+      ]
+    }
+  ],
+  "name": "twx-app-mdl"
+}

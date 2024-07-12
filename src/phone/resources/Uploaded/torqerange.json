@@ -1,0 +1,148 @@
+{
+    "thumbnail": "logo.png",
+    "versionId": "49eb56b5-581c-4f8c-ab5a-42ce76177e9d",
+    "publishDate": "2024-01-19T14:10:34.461Z",
+    "sxslVersion": "2.0",
+    "introduction": {
+      "resources": [
+        {
+          "mimeType": "text/plain",
+          "text": "NGC Rocket Processing Demo."
+        }
+      ]
+    },
+    "description": "NGC Demo from SOWI",
+    "statements": [
+      {
+        "stepId": "fed85e74-bcc6-42f7-8573-a526009fedde",
+        "type": "Step"
+      }
+    ],
+    "contexts": {
+      "mycontext": {
+        "assets": {
+          "rocket.seq": {
+            "resources": [
+              {
+                "composition": "partset",
+                "modelUrl": "eb_seq.pvz",
+                "mimeType": "application/vnd.ptc.pvz",
+                "sceneName": "l-Creo 3D - Figure 1.pvi"
+              }
+            ]
+          }
+        },
+        "models": [
+          {
+            "mimeType": "model/pvz",
+            "tags": [
+              "occlusion",
+              "full"
+            ],
+            "url": "EngineBlock.pvz"
+          }
+        ],
+        "trackers": [
+          {
+            "mimeType": "application/vnd.ptc.tracker.modeltracker",
+            "content": {
+              "dataset": {
+                "xml": "EngineBlock.xml",
+                "dat": "EngineBlock.dat"
+              },
+              "targetName": "EngineBlock",
+              "guideView": {
+                "mimeType": "image/png",
+                "url": "EngineBlock_viewpoint_0001_2.png",
+                "lang": "en-US"
+              }
+            },
+            "guideView": {
+              "mimeType": "image/png",
+              "url": "EngineBlock_viewpoint_0001_2.png",
+              "lang": "en-US"
+            }
+          }
+        ]
+      }
+    },
+    "id": "Procedure_ZMfWVRAw",
+    "title": {
+      "resources": [
+        {
+          "text": "SFARWI Vendor Use Case 2"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "id": "fed85e74-bcc6-42f7-8573-a526009fedde",
+        "title": {
+          "resources": [
+            {
+              "mimeType": "text/plain",
+              "text": "Op 0060"
+            }
+          ]
+        },
+        "actions": [
+          {
+            "instructions": {
+              "resources": [
+                {
+                  "mimeType": "text/plain",
+                  "text": "Place US_Flag on Loaded Motor according to Mil Standard 130.\nLink or embed spec Mil-130 for this operation  <strong>(ACTION - CaptureNumber . Torque Range Example. Min = 4.5, Max = 5.0)</strong>"
+                }
+              ]
+            },
+            "references": [
+              {
+                "resources": [
+                  {
+                    "id": "2da80432-549f-41bf-a654-fae742f3c036",
+                    "mimeType": "application/pdf",
+                    "url": "DemoWorkInstructions.pdf"
+                  }
+                ],
+                "id": "2da80432-549f-41bf-a654-fae742f3c036"
+              }
+            ],
+            "type": "Tighten",
+            "details": {
+              "type": "CaptureNumber",
+              "title": {
+                "resources": [
+                  {
+                    "mimeType": "text/plain",
+                    "text": "Torque"
+                  }
+                ]
+              },
+              "ID": "torque",
+              "maxCaptures": 3,
+              "minerror": 4.5,
+              "maxerror": 5.1,
+              "minwarn": 4.6,
+              "maxwarn": 5.0,
+              "nominal": 4.8,
+              "units": "Nm",
+              "integer": false,
+              "precision": 6,
+              "hint": {
+                "instructions": {
+                  "resources": [
+                    {
+                      "mimeType": "text/plain",
+                      "text": "Torque in Nm"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "orgId": "80d2567c-d0b2-4b72-8bc6-e021f579485a",
+    "versionDisplayName": 1
+  }

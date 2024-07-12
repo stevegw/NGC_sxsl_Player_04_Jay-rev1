@@ -1,0 +1,223 @@
+[2024-01-19T23:14:20.926Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Begin upgrade of project
+[2024-01-19T23:14:20.928Z] info: [twx-studio:upgrade:NGC_sxsl_Player_01] Upgrading project
+[2024-01-19T23:14:20.952Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Remove all the src-scaffold files from src
+[2024-01-19T23:14:20.954Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Deleting settings.path
+[2024-01-19T23:14:20.954Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Deleting settings.studioPath
+[2024-01-19T23:14:20.954Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] C:\Users\jhunt\Documents\VuforiaStudio\Projects\NGC_sxsl_Player_01\src\shared\components\Data.json
+[2024-01-19T23:14:20.955Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] C:\Users\jhunt\Documents\VuforiaStudio\Projects\NGC_sxsl_Player_01\src\shared\components\Device.json
+[2024-01-19T23:14:20.956Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Unable to migrate application parameters; none exist in project's appConfig.json.
+[2024-01-19T23:14:20.956Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Migrate service bindings for view
+[2024-01-19T23:14:20.956Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Updating bindings in view: 
+[2024-01-19T23:14:20.957Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Updating bindings in the Home json, file contents: {"attributes":{"twx-widget":"","viewtype":"ar","is-widget-container":"true"},"children":[{"name":"twx-container-content","children":[{"attributes":{"twx-widget":"","translation-key":"@ptc/ves-ar-extension:3D Container","is-widget-container":"true"},"name":"twx-dt-view","children":[{"name":"twx-container-content"}]},{"attributes":{"twx-widget":"","translation-key":"@ptc/ves-ar-extension:2D Overlay","is-widget-container":"true"},"name":"twx-overlay","children":[{"name":"twx-container-content","children":[{"attributes":{"twx-widget":"","translation-key":"@ptc/ves-ar-extension:Top Panel","position":"top","is-widget-container":"true"},"name":"twx-overlay-container","children":[{"name":"twx-container-content"}]},{"attributes":{"twx-widget":"","translation-key":"@ptc/ves-ar-extension:2D Body"},"name":"twx-overlay-body","children":[{"name":"twx-container-content","children":[{"attributes":{"twx-widget":"","translation-key":"@ptc/ves-ar-extension:Left Panel","position":"left","is-widget-container":"true"},"name":"twx-overlay-container","children":[{"name":"twx-container-content"}]},{"attributes":{"twx-widget":"","translation-key":"@ptc/ves-ar-extension:Center Panel","position":"center","is-widget-container":"true"},"name":"twx-overlay-container","children":[{"name":"twx-container-content"}]},{"attributes":{"twx-widget":"","translation-key":"@ptc/ves-ar-extension:Right Panel","position":"right","is-widget-container":"true"},"name":"twx-overlay-container","children":[{"name":"twx-container-content"}]}]}]},{"attributes":{"twx-widget":"","translation-key":"@ptc/ves-ar-extension:Bottom Panel","position":"bottom","is-widget-container":"true"},"name":"twx-overlay-container","children":[{"name":"twx-container-content"}]}]}]}]},{"name":"twx-view-data"}],"name":"twx-view"}
+[2024-01-19T23:14:20.957Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Unable to update the metadata.json file, the file was not found.
+[2024-01-19T23:14:20.958Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Unable to update the metadata.json file, it was not found at C:\Users\jhunt\Documents\VuforiaStudio\Projects\NGC_sxsl_Player_01\src\shared\components\metadata.json
+[2024-01-19T23:14:20.960Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Contents of view before upgrading
+[2024-01-19T23:14:20.960Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Unable to update the metadata.json file, it was not found at C:\Users\jhunt\Documents\VuforiaStudio\Projects\NGC_sxsl_Player_01\src\shared\components\metadata.json
+[2024-01-19T23:14:20.962Z] warn: [twx-studio:upgrade:NGC_sxsl_Player_01] Wasn't able to migrate the data in
+[2024-01-19T23:14:20.962Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Cached device dimensions are obsolete and will be deleted:
+[2024-01-19T23:14:20.964Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] File not found during migration of handler to handler-path C:\Users\jhunt\Documents\VuforiaStudio\Projects\NGC_sxsl_Player_01\src\shared\components\Data.json
+[2024-01-19T23:14:20.965Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Make sure there are not any stale files lying around
+[2024-01-19T23:14:20.966Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Create .gitignore for project dir
+[2024-01-19T23:14:20.967Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Copying /src/**/* to project, overwrite=false
+[2024-01-19T23:14:20.968Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2024-01-19T23:14:21.034Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Copy of project files complete
+[2024-01-19T23:14:21.034Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Updating version to 
+[2024-01-19T23:14:21.034Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] onupgrade sucessful, now build the project
+[2024-01-19T23:14:21.035Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] BEGIN buildApp
+[2024-01-19T23:14:21.035Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] write settings
+[2024-01-19T23:14:21.036Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] copy runtime extensions
+[2024-01-19T23:14:22.189Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] packageThemeSet
+[2024-01-19T23:14:24.282Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] onBuild
+[2024-01-19T23:14:24.283Z] info: [twx-studio:upgrade:NGC_sxsl_Player_01] Building ves-ar-extension app:
+[2024-01-19T23:14:24.287Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] pathDir
+[2024-01-19T23:14:25.313Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] END buildApp
+[2024-01-19T23:14:25.313Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Build succeeded.
+[2024-02-19T19:43:01.381Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Begin upgrade of project
+[2024-02-19T19:43:01.382Z] info: [twx-studio:upgrade:NGC_sxsl_Player_01] Upgrading project
+[2024-02-19T19:43:01.383Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Make sure there are not any stale files lying around
+[2024-02-19T19:43:01.384Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Removing 
+[2024-02-19T19:43:01.390Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Removing 
+[2024-02-19T19:43:01.496Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Removing 
+[2024-02-19T19:43:01.807Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Removing 
+[2024-02-19T19:43:01.823Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Removing 
+[2024-02-19T19:43:01.827Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Copying /src/**/* to project, overwrite=false
+[2024-02-19T19:43:01.829Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2024-02-19T19:43:01.881Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Copy of project files complete
+[2024-02-19T19:43:01.882Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Updating version to 
+[2024-02-19T19:43:01.882Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] onupgrade sucessful, now build the project
+[2024-02-19T19:43:01.882Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] BEGIN buildApp
+[2024-02-19T19:43:01.882Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] write settings
+[2024-02-19T19:43:01.883Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] copy runtime extensions
+[2024-02-19T19:43:02.995Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] packageThemeSet
+[2024-02-19T19:43:04.777Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] onBuild
+[2024-02-19T19:43:04.778Z] info: [twx-studio:upgrade:NGC_sxsl_Player_01] Building ves-ar-extension app:
+[2024-02-19T19:43:04.782Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] pathDir
+[2024-02-19T19:43:05.138Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] END buildApp
+[2024-02-19T19:43:05.138Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Build succeeded.
+[2024-04-29T19:34:35.276Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Begin upgrade of project
+[2024-04-29T19:34:35.277Z] info: [twx-studio:upgrade:NGC_sxsl_Player_01] Upgrading project
+[2024-04-29T19:34:35.279Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Moving .glb resources for project: NGC_sxsl_Player_01
+[2024-04-29T19:34:35.279Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] No model target found!
+[2024-04-29T19:34:35.279Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Make sure there are not any stale files lying around
+[2024-04-29T19:34:35.279Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Removing 
+[2024-04-29T19:34:35.285Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Removing 
+[2024-04-29T19:34:35.380Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Removing 
+[2024-04-29T19:34:35.730Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Removing 
+[2024-04-29T19:34:35.747Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Removing 
+[2024-04-29T19:34:35.751Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Copying /src/**/* to project, overwrite=false
+[2024-04-29T19:34:35.754Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2024-04-29T19:34:35.811Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Copy of project files complete
+[2024-04-29T19:34:35.811Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Updating version to 
+[2024-04-29T19:34:35.811Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] onupgrade sucessful, now build the project
+[2024-04-29T19:34:35.812Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] BEGIN buildApp
+[2024-04-29T19:34:35.812Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] write settings
+[2024-04-29T19:34:35.812Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] copy runtime extensions
+[2024-04-29T19:34:37.309Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] packageThemeSet
+[2024-04-29T19:34:39.310Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] onBuild
+[2024-04-29T19:34:39.310Z] info: [twx-studio:upgrade:NGC_sxsl_Player_01] Building ves-ar-extension app:
+[2024-04-29T19:34:39.315Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] pathDir
+[2024-04-29T19:34:39.735Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] END buildApp
+[2024-04-29T19:34:39.735Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_01] Build succeeded.
+
+2024-05-23T11:51:13.412Z: Project "NGC_sxsl_Player_01" saved as new project "NGC_sxsl_Player_02_UpdatedActions"[2024-05-23T14:22:23.165Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Begin upgrade of project
+[2024-05-23T14:22:23.167Z] info: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Upgrading project
+[2024-05-23T14:22:23.170Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Moving .glb resources for project: NGC_sxsl_Player_02_UpdatedActions
+[2024-05-23T14:22:23.170Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] No model target found!
+[2024-05-23T14:22:23.170Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Make sure there are not any stale files lying around
+[2024-05-23T14:22:23.171Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Removing 
+[2024-05-23T14:22:23.194Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Create .gitignore for project dir
+[2024-05-23T14:22:23.196Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Copying /src/**/* to project, overwrite=false
+[2024-05-23T14:22:23.197Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2024-05-23T14:22:23.285Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Copy of project files complete
+[2024-05-23T14:22:23.285Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Updating version to 
+[2024-05-23T14:22:23.286Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] onupgrade sucessful, now build the project
+[2024-05-23T14:22:23.286Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] BEGIN buildApp
+[2024-05-23T14:22:23.286Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] write settings
+[2024-05-23T14:22:23.287Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] copy runtime extensions
+[2024-05-23T14:22:24.612Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] packageThemeSet
+[2024-05-23T14:22:26.637Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] onBuild
+[2024-05-23T14:22:26.637Z] info: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Building ves-ar-extension app:
+[2024-05-23T14:22:26.641Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] pathDir
+[2024-05-23T14:22:27.141Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] END buildApp
+[2024-05-23T14:22:27.141Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Build succeeded.
+[2024-06-10T14:43:34.233Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Begin upgrade of project
+[2024-06-10T14:43:34.234Z] info: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Upgrading project
+[2024-06-10T14:43:34.273Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Moving .glb resources for project: NGC_sxsl_Player_02_UpdatedActions
+[2024-06-10T14:43:34.274Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] No model target found!
+[2024-06-10T14:43:34.274Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] starting mt upgrade
+[2024-06-10T14:43:34.274Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] finishing mt upgrade
+[2024-06-10T14:43:34.274Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Make sure there are not any stale files lying around
+[2024-06-10T14:43:34.275Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Removing 
+[2024-06-10T14:43:34.280Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Removing 
+[2024-06-10T14:43:34.415Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Removing 
+[2024-06-10T14:43:34.770Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Removing 
+[2024-06-10T14:43:34.793Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Removing 
+[2024-06-10T14:43:34.799Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Copying /src/**/* to project, overwrite=false
+[2024-06-10T14:43:34.800Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2024-06-10T14:43:34.872Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Copy of project files complete
+[2024-06-10T14:43:34.872Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Updating version to 
+[2024-06-10T14:43:34.872Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] onupgrade sucessful, now build the project
+[2024-06-10T14:43:34.873Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] BEGIN buildApp
+[2024-06-10T14:43:34.873Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] write settings
+[2024-06-10T14:43:34.874Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] copy runtime extensions
+[2024-06-10T14:43:36.425Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] packageThemeSet
+[2024-06-10T14:43:38.680Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] onBuild
+[2024-06-10T14:43:38.680Z] info: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Building ves-ar-extension app:
+[2024-06-10T14:43:39.241Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] pathDir
+[2024-06-10T14:43:40.141Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] END buildApp
+[2024-06-10T14:43:40.141Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_02_UpdatedActions] Build succeeded.
+
+2024-06-18T21:39:36.488Z: Project "NGC_sxsl_Player_02_UpdatedActions" saved as new project "NGC_sxsl_Player_03"[2024-06-18T21:39:39.394Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_03] Begin upgrade of project
+[2024-06-18T21:39:39.395Z] info: [twx-studio:upgrade:NGC_sxsl_Player_03] Upgrading project
+[2024-06-18T21:39:39.397Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_03] starting mt upgrade
+[2024-06-18T21:39:39.397Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_03] finishing mt upgrade
+[2024-06-18T21:39:39.397Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_03] Make sure there are not any stale files lying around
+[2024-06-18T21:39:39.398Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_03] Removing 
+[2024-06-18T21:39:39.418Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_03] Create .gitignore for project dir
+[2024-06-18T21:39:39.420Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_03] Copying /src/**/* to project, overwrite=false
+[2024-06-18T21:39:39.423Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_03] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2024-06-18T21:39:39.497Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_03] Copy of project files complete
+[2024-06-18T21:39:39.497Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_03] Updating version to 
+[2024-06-18T21:39:39.498Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_03] onupgrade sucessful, now build the project
+[2024-06-18T21:39:39.498Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_03] BEGIN buildApp
+[2024-06-18T21:39:39.498Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_03] write settings
+[2024-06-18T21:39:39.499Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_03] copy runtime extensions
+[2024-06-18T21:39:41.247Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_03] packageThemeSet
+[2024-06-18T21:39:43.611Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_03] onBuild
+[2024-06-18T21:39:43.612Z] info: [twx-studio:upgrade:NGC_sxsl_Player_03] Building ves-ar-extension app:
+[2024-06-18T21:39:43.618Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_03] pathDir
+[2024-06-18T21:39:44.150Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_03] END buildApp
+[2024-06-18T21:39:44.150Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_03] Build succeeded.
+
+2024-07-03T18:44:06.466Z: Project "NGC_sxsl_Player_03" saved as new project "NGC_sxsl_Player_04_Jay"[2024-07-03T18:47:33.564Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Begin upgrade of project
+[2024-07-03T18:47:33.564Z] info: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Upgrading project
+[2024-07-03T18:47:33.567Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] starting mt upgrade
+[2024-07-03T18:47:33.567Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] finishing mt upgrade
+[2024-07-03T18:47:33.567Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Make sure there are not any stale files lying around
+[2024-07-03T18:47:33.568Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Removing 
+[2024-07-03T18:47:33.586Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Create .gitignore for project dir
+[2024-07-03T18:47:33.587Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Copying /src/**/* to project, overwrite=false
+[2024-07-03T18:47:33.590Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2024-07-03T18:47:33.664Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Copy of project files complete
+[2024-07-03T18:47:33.664Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Updating version to 
+[2024-07-03T18:47:33.664Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] onupgrade sucessful, now build the project
+[2024-07-03T18:47:33.665Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] BEGIN buildApp
+[2024-07-03T18:47:33.665Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] write settings
+[2024-07-03T18:47:33.666Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] copy runtime extensions
+[2024-07-03T18:47:34.665Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] packageThemeSet
+[2024-07-03T18:47:36.748Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] onBuild
+[2024-07-03T18:47:36.748Z] info: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Building ves-ar-extension app:
+[2024-07-03T18:47:36.753Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] pathDir
+[2024-07-03T18:47:37.575Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] END buildApp
+[2024-07-03T18:47:37.575Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Build succeeded.
+[2024-07-08T13:05:24.569Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Begin upgrade of project
+[2024-07-08T13:05:24.570Z] info: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Upgrading project
+[2024-07-08T13:05:24.572Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] starting mt upgrade
+[2024-07-08T13:05:24.573Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] finishing mt upgrade
+[2024-07-08T13:05:24.573Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] starting mt upgrade
+[2024-07-08T13:05:24.573Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] finishing mt upgrade
+[2024-07-08T13:05:24.574Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] starting mt upgrade
+[2024-07-08T13:05:24.574Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] finishing mt upgrade
+[2024-07-08T13:05:24.574Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Make sure there are not any stale files lying around
+[2024-07-08T13:05:24.574Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Removing 
+[2024-07-08T13:05:24.593Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Create .gitignore for project dir
+[2024-07-08T13:05:24.594Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Copying /src/**/* to project, overwrite=false
+[2024-07-08T13:05:24.596Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2024-07-08T13:05:24.691Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Copy of project files complete
+[2024-07-08T13:05:24.692Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Updating version to 
+[2024-07-08T13:05:24.692Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] onupgrade sucessful, now build the project
+[2024-07-08T13:05:24.692Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] BEGIN buildApp
+[2024-07-08T13:05:24.692Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] write settings
+[2024-07-08T13:05:24.693Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] copy runtime extensions
+[2024-07-08T13:05:25.969Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] packageThemeSet
+[2024-07-08T13:05:27.838Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] onBuild
+[2024-07-08T13:05:27.838Z] info: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Building ves-ar-extension app:
+[2024-07-08T13:05:27.843Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] pathDir
+[2024-07-08T13:05:29.676Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] END buildApp
+[2024-07-08T13:05:29.677Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay] Build succeeded.
+
+2024-07-12T03:05:24.373Z: Project "NGC_sxsl_Player_04_Jay" saved as new project "NGC_sxsl_Player_04_Jay-rev1"[2024-07-12T03:05:26.166Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] Begin upgrade of project
+[2024-07-12T03:05:26.168Z] info: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] Upgrading project
+[2024-07-12T03:05:26.222Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] starting mt upgrade
+[2024-07-12T03:05:26.222Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] finishing mt upgrade
+[2024-07-12T03:05:26.223Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] starting mt upgrade
+[2024-07-12T03:05:26.223Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] finishing mt upgrade
+[2024-07-12T03:05:26.224Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] starting mt upgrade
+[2024-07-12T03:05:26.224Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] finishing mt upgrade
+[2024-07-12T03:05:26.224Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] Make sure there are not any stale files lying around
+[2024-07-12T03:05:26.224Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] Removing 
+[2024-07-12T03:05:26.245Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] Create .gitignore for project dir
+[2024-07-12T03:05:26.247Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] Copying /src/**/* to project, overwrite=false
+[2024-07-12T03:05:26.249Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2024-07-12T03:05:26.356Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] Copy of project files complete
+[2024-07-12T03:05:26.357Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] Updating version to 
+[2024-07-12T03:05:26.357Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] onupgrade sucessful, now build the project
+[2024-07-12T03:05:26.357Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] BEGIN buildApp
+[2024-07-12T03:05:26.357Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] write settings
+[2024-07-12T03:05:26.358Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] copy runtime extensions
+[2024-07-12T03:05:28.281Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] packageThemeSet
+[2024-07-12T03:05:30.239Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] onBuild
+[2024-07-12T03:05:30.239Z] info: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] Building ves-ar-extension app:
+[2024-07-12T03:05:30.246Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] pathDir
+[2024-07-12T03:05:31.424Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] END buildApp
+[2024-07-12T03:05:31.424Z] debug: [twx-studio:upgrade:NGC_sxsl_Player_04_Jay-rev1] Build succeeded.

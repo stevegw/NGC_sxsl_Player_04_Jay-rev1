@@ -1,0 +1,1070 @@
+{
+  "thumbnail": "logo.png",
+  "versionId": "49eb56b5-581c-4f8c-ab5a-42ce76177e9d",
+  "publishDate": "2024-01-19T14:10:34.461Z",
+  "sxslVersion": "2.0",
+  "introduction": {
+    "resources": [
+      {
+        "mimeType": "text/plain",
+        "text": "NGC Rocket Processing Demo."
+      }
+    ]
+  },
+  "description": "NGC Demo from SOWI",
+  "statements": [
+    {
+      "stepId": "jayaf568-0fbf-4efe-84f2-82b43fa3a233",
+      "type": "Step"
+    },
+    {
+      "stepId": "e6aaf568-0fbf-4efe-84f2-82b43fa3a233",
+      "type": "Step"
+    },
+    {
+      "stepId": "c4b3e0b6-21d7-4e5b-aa0c-86103bc3b2b7",
+      "type": "Step"
+    },
+    {
+      "stepId": "77ec44cf-fd54-482f-874a-a6c3c556c2e1",
+      "type": "Step"
+    },
+    {
+      "stepId": "JJec44cf-fd54-482f-874a-a6c3c556c2e1",
+      "type": "Step"
+    },
+    {
+      "stepId": "e2c47bd2-9ce2-420f-a238-cdecc609675f",
+      "type": "Step"
+    },
+    {
+      "stepId": "4dcac5f8-0c74-4535-a774-870f20f52df3",
+      "type": "Step"
+    },
+    {
+      "stepId": "fed85e74-bcc6-42f7-8573-a526009fedde",
+      "type": "Step"
+    },
+    {
+      "stepId": "jjd85e74-bcc6-42f7-8573-a526009fedde",
+      "type": "Step"
+    }
+  ],
+  "contexts": {
+    "mycontext": {
+      "assets": {
+        "rocket.seq": {
+          "resources": [
+            {
+              "composition": "partset",
+              "modelUrl": "eb_seq.pvz",
+              "mimeType": "application/vnd.ptc.pvz",
+              "sceneName": "Figure 1"
+            }
+          ]
+        }
+      },
+      "models": [
+        {
+          "mimeType": "model/pvz",
+          "tags": [
+            "occlusion",
+            "full"
+          ],
+          "url": "EngineBlock.pvz"
+        }
+      ],
+      "trackers": [
+        {
+          "mimeType": "application/vnd.ptc.tracker.modeltracker",
+          "content": {
+            "dataset": {
+              "xml": "EngineBlock.xml",
+              "dat": "EngineBlock.dat"
+            },
+            "targetName": "EngineBlock",
+            "guideView": {
+              "mimeType": "image/png",
+              "url": "EngineBlock_viewpoint_0001_2.png",
+              "lang": "en-US"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "id": "Procedure_ZMfWVRAw",
+  "title": {
+    "resources": [
+      {
+        "text": "SFARWI Vendor Use Case 2"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "id": "jayaf568-0fbf-4efe-84f2-82b43fa3a233",
+      "title": {
+        "resources": [
+          {
+            "mimeType": "text/plain",
+            "text": "Op 0000"
+          }
+        ]
+      },
+      "actions": [
+        {
+          "instructions": {
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "This is the first step, it should be a scan of the Work Order."
+              }
+            ]
+          },
+          "references": [
+            {
+              "resources": [
+                {
+                  "id": "f759cd35-31c4-4b57-a968-bd06cbcb6e32",
+                  "mimeType": "image/jpeg",
+                  "url": "fig2.jpg"
+                }
+              ],
+              "id": "f759cd35-31c4-4b57-a968-bd06cbcb6e32"
+            },
+            {
+              "resources": [
+                {
+                  "id": "85893cbb-7e64-46ec-93c3-3746f645472b",
+                  "mimeType": "image/jpeg",
+                  "url": "fig1.jpg"
+                }
+              ],
+              "id": "85893cbb-7e64-46ec-93c3-3746f645472b"
+            },
+            {
+              "resources": [
+                {
+                  "id": "9128fbaa-7764-4e00-9213-951464f4c164",
+                  "mimeType": "image/jpeg",
+                  "url": "fig2_b.jpg"
+                }
+              ],
+              "id": "9128fbaa-7764-4e00-9213-951464f4c164"
+            }
+          ],
+          "type": "Verify",
+          "details": {
+            "type": "CaptureString",
+            "ID": "NOTWorkOrderNumber",
+            "required": true,
+            "maxCaptures": 3,
+            "tool": "barcode",
+            "hint": {
+              "instructions": {
+                "resources": [
+                  {
+                    "mimeType": "text/plain",
+                    "text": "Work Order"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "acknowledgement": {
+        "type": "PassFail"
+      }
+    },
+    {
+      "id": "e6aaf568-0fbf-4efe-84f2-82b43fa3a233",
+      "title": {
+        "resources": [
+          {
+            "mimeType": "text/plain",
+            "text": "OP 0010"
+          }
+        ]
+      },
+      "actions": [
+        {
+          "instructions": {
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "Attach Actuator Yaw on bracket of the LOADED MOTOR between the LOADED MOTOR and NOZZLE  <strong>(ACKNOLEDGEMENT - CONFIRMATION)</strong>"
+              }
+            ]
+          },
+          "references": [
+            {
+              "resources": [
+                {
+                  "id": "426bffbe-bc39-44ee-bedb-0e60e853d7f8",
+                  "mimeType": "image/jpeg",
+                  "url": "fig1.jpg"
+                }
+              ],
+              "id": "426bffbe-bc39-44ee-bedb-0e60e853d7f8"
+            },
+            {
+              "resources": [
+                {
+                  "id": "3990e122-1d94-4d2a-9f95-c448b8d32702",
+                  "mimeType": "image/jpeg",
+                  "url": "fig1_B.jpg"
+                }
+              ],
+              "id": "3990e122-1d94-4d2a-9f95-c448b8d32702"
+            }
+          ],
+          "type": "Verify"
+        }
+      ],
+      "acknowledgement": {
+        "type": "Confirmation"
+      }
+    },
+    {
+      "id": "c4b3e0b6-21d7-4e5b-aa0c-86103bc3b2b7",
+      "title": {
+        "resources": [
+          {
+            "mimeType": "text/plain",
+            "text": "Op 0020"
+          }
+        ]
+      },
+      "actions": [
+        {
+          "instructions": {
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "Insert Pin between ACTUATOR YAW and NOZZLE.  Record the number of Pins used in this step <strong>(ACTION: Capture String - No RegEx) and PassFail acknowledgment</strong>"
+              }
+            ]
+          },
+          "references": [
+            {
+              "resources": [
+                {
+                  "id": "f759cd35-31c4-4b57-a968-bd06cbcb6e32",
+                  "mimeType": "image/jpeg",
+                  "url": "fig2.jpg"
+                }
+              ],
+              "id": "f759cd35-31c4-4b57-a968-bd06cbcb6e32"
+            },
+            {
+              "resources": [
+                {
+                  "id": "85893cbb-7e64-46ec-93c3-3746f645472b",
+                  "mimeType": "image/jpeg",
+                  "url": "fig1.jpg"
+                }
+              ],
+              "id": "85893cbb-7e64-46ec-93c3-3746f645472b"
+            },
+            {
+              "resources": [
+                {
+                  "id": "9128fbaa-7764-4e00-9213-951464f4c164",
+                  "mimeType": "image/jpeg",
+                  "url": "fig2_b.jpg"
+                }
+              ],
+              "id": "9128fbaa-7764-4e00-9213-951464f4c164"
+            }
+          ],
+          "type": "Verify",
+          "details": {
+            "type": "CaptureString",
+            "title": {
+              "resources": [
+                {
+                  "mimeType": "text/plain",
+                  "text": "brand"
+                }
+              ]
+            },
+            "ID": "22Brand",
+            "required": true,
+            "maxCaptures": 3,
+            "hint": {
+              "instructions": {
+                "resources": [
+                  {
+                    "mimeType": "text/plain",
+                    "text": "Enter Pins Used"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "acknowledgement": {
+        "type": "PassFail"
+      }
+    },
+    {
+      "id": "77ec44cf-fd54-482f-874a-a6c3c556c2e1",
+      "title": {
+        "resources": [
+          {
+            "mimeType": "text/plain",
+            "text": "OP 0030"
+          }
+        ]
+      },
+      "actions": [
+        {
+          "instructions": {
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "Show step to highlight areas around Pin to place lubricant. Embed Figure 3 into the AR Work instructions. <strong>(Acknowledgement - PASSFAIL)</strong>"
+              }
+            ]
+          },
+          "references": [
+            {
+              "resources": [
+                {
+                  "id": "97d941f0-0c9d-4b0b-96d8-f2d55055f6b1",
+                  "mimeType": "image/jpeg",
+                  "url": "fig3.jpg"
+                }
+              ],
+              "id": "97d941f0-0c9d-4b0b-96d8-f2d55055f6b1"
+            }
+          ],
+          "extras": {
+            "resources": [
+              {
+                "mimeType": "ext.ptc.plm24ar.Visual"
+              }
+            ]
+          },
+          "subjects": [
+            {
+              "assetId": "rocket.seq",
+              "contextId": "mycontext"
+            }
+          ],
+          "type": "Verify"
+        }
+      ],
+      "acknowledgement": {
+        "type": "PassFail",
+        "reasonType": "Code",
+        "reasonCodes": [
+          {
+            "code": "1",
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "Placed - Good"
+              }
+            ]
+          },
+          {
+            "code": "2",
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "No Room to Place"
+              }
+            ]
+          },
+          {
+            "code": "3",
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "Placed - Subpar"
+              }
+            ]
+          },
+          {
+            "code": "4",
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "No Sticker to Place"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "JJec44cf-fd54-482f-874a-a6c3c556c2e1",
+      "title": {
+        "resources": [
+          {
+            "mimeType": "text/plain",
+            "text": "OP 0030 More Inputs"
+          }
+        ]
+      },
+      "actions": [
+        {
+          "instructions": {
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "Action / SubStep 2. This is a freeform Text input example for a Substep / Action. <strong>(Basic Text Entry)</strong>"
+              }
+            ]
+          },
+          "references": [
+            {
+              "resources": [
+                {
+                  "id": "f759cd35-31c4-4b57-a968-bd06cbcb6e32",
+                  "mimeType": "image/jpeg",
+                  "url": "fig2.jpg"
+                }
+              ],
+              "id": "f759cd35-31c4-4b57-a968-bd06cbcb6e32"
+            },
+            {
+              "resources": [
+                {
+                  "id": "85893cbb-7e64-46ec-93c3-3746f645472b",
+                  "mimeType": "image/jpeg",
+                  "url": "fig1.jpg"
+                }
+              ],
+              "id": "85893cbb-7e64-46ec-93c3-3746f645472b"
+            },
+            {
+              "resources": [
+                {
+                  "id": "9128fbaa-7764-4e00-9213-951464f4c164",
+                  "mimeType": "image/jpeg",
+                  "url": "fig2_b.jpg"
+                }
+              ],
+              "id": "9128fbaa-7764-4e00-9213-951464f4c164"
+            }
+          ],
+          "type": "Verify",
+          "details": {
+            "type": "CaptureString",
+            "title": {
+              "resources": [
+                {
+                  "mimeType": "text/plain",
+                  "text": "brand"
+                }
+              ]
+            },
+            "ID": "22Branddd",
+            "required": true,
+            "maxCaptures": 3,
+            "hint": {
+              "instructions": {
+                "resources": [
+                  {
+                    "mimeType": "text/plain",
+                    "text": "Enter Text here"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "instructions": {
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "Action / SubStep 3. Optional Image Capture Substep / Action. <strong>(Take Picture)</strong>"
+              }
+            ]
+          },
+          "type": "Assemble",
+          "details": {
+            "type": "CaptureImage",
+            "hint": {
+              "resources": [
+                {
+                  "mimeType": "text/plain",
+                  "text": "Say cheese"
+                }
+              ]
+            },
+            "mimeType": "image/jpeg",
+            "ID": "proof",
+            "minCaptures": 2,
+            "required": false
+          },
+          "references": [
+            {
+              "resources": [
+                {
+                  "id": "97d941f0-0c9d-4b0b-96d8-f2d55055f6b1",
+                  "mimeType": "image/jpeg",
+                  "url": "fig3.jpg"
+                }
+              ],
+              "id": "97d941f0-0c9d-4b0b-96d8-f2d55055f6b1"
+            }
+          ]
+        },
+        {
+          "id": "0040_Pre-Heater_Screw_Torque_Check-action",
+          "type": "Tighten",
+          "instructions": {
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "Action / SubStep Number input that must fall within a specific range.  <strong>(Positive Integers)</strong>"
+              }
+            ]
+          },
+          "details": {
+            "type": "CaptureNumber",
+            "title": {
+              "resources": [
+                {
+                  "mimeType": "text/plain",
+                  "text": "enter positive integer (incl. 0)"
+                }
+              ]
+            },
+            "ID": "serialNumber",
+            "required": false,
+            "regex": "^(0|[1-9]\\d*)$",
+            "hint": {
+              "instructions": {
+                "resources": [
+                  {
+                    "mimeType": "text/plain",
+                    "text": "enter positive integer (incl. 0)"
+                  }
+                ]
+              }
+            }
+          },
+          "references": []
+        }
+      ]
+    },
+    {
+      "id": "e2c47bd2-9ce2-420f-a238-cdecc609675f",
+      "title": {
+        "resources": [
+          {
+            "mimeType": "text/plain",
+            "text": "Op 0040"
+          }
+        ]
+      },
+      "actions": [
+        {
+          "instructions": {
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "Take a photo of the applied lubricant using SFARWI Solution <strong>(ACTION - CaptureImage)</strong>"
+              }
+            ]
+          },
+          "references": [],
+          "type": "Verify",
+          "details": {
+            "type": "CaptureImage",
+            "hint": {
+              "resources": [
+                {
+                  "mimeType": "text/plain",
+                  "text": "Say cheese"
+                }
+              ]
+            },
+            "mimeType": "image/jpeg",
+            "ID": "proof",
+            "minCaptures": 2,
+            "required": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "4dcac5f8-0c74-4535-a774-870f20f52df3",
+      "title": {
+        "resources": [
+          {
+            "mimeType": "text/plain",
+            "text": "Op 0050"
+          }
+        ]
+      },
+      "actions": [
+        {
+          "instructions": {
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "Enter date lubricant was applied in a popup box.\nEnter date of expiration for lubricant. <strong>(ACTION - CaptureString w/ REGEX)</strong>\n"
+              }
+            ]
+          },
+          "references": [],
+          "type": "Verify",
+          "details": {
+            "type": "CaptureString",
+            "title": {
+              "resources": [
+                {
+                  "mimeType": "text/plain",
+                  "text": "Serial Number"
+                }
+              ]
+            },
+            "ID": "serialNumber",
+            "required": false,
+            "regex": "^(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20\\d\\d)$",
+            "hint": {
+              "instructions": {
+                "resources": [
+                  {
+                    "mimeType": "text/plain",
+                    "text": "Use format mm/dd/yyyy"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "fed85e74-bcc6-42f7-8573-a526009fedde",
+      "title": {
+        "resources": [
+          {
+            "mimeType": "text/plain",
+            "text": "Op 0060"
+          }
+        ]
+      },
+      "actions": [
+        {
+          "instructions": {
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "Place US_Flag on Loaded Motor according to Mil Standard 130.\nLink or embed spec Mil-130 for this operation  <strong>(ACTION - CaptureNumber . Torque Range Example. Min = 4.5, Max = 5.0)</strong>"
+              }
+            ]
+          },
+          "references": [
+            {
+              "resources": [
+                {
+                  "id": "2da80432-549f-41bf-a654-fae742f3c036",
+                  "mimeType": "application/pdf",
+                  "url": "DemoWorkInstructions.pdf"
+                }
+              ],
+              "description": {
+                "resources": [
+                  {
+                    "mimeType": "text/plain",
+                    "text": "DemoWI Doc"
+                  }
+                ]
+              },
+              "id": "2da80432-549f-41bf-a654-fae742f3c036"
+            },
+            {
+              "resources": [
+                {
+                  "id": "2da80432-549f-41bf-a654-fae742f3c036",
+                  "mimeType": "application/pdf",
+                  "url": "2022-calendars.pdf"
+                }
+              ],
+              "description": {
+                "resources": [
+                  {
+                    "mimeType": "text/plain",
+                    "text": "Calendar Doc"
+                  }
+                ]
+              },
+              "id": "2da80432-549f-41bf-a654-fae742f3c036"
+            }
+          ],
+          "type": "Tighten",
+          "details": {
+            "type": "CaptureNumber",
+            "title": {
+              "resources": [
+                {
+                  "mimeType": "text/plain",
+                  "text": "Torque"
+                }
+              ]
+            },
+            "ID": "torque",
+            "maxCaptures": 3,
+            "minerror": 4.5,
+            "maxerror": 5.1,
+            "minwarn": 4.6,
+            "maxwarn": 5.0,
+            "nominal": 4.8,
+            "units": "Nm",
+            "integer": false,
+            "precision": 2,
+            "hint": {
+              "instructions": {
+                "resources": [
+                  {
+                    "mimeType": "text/plain",
+                    "text": "Torque in Nm"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "jjd85e74-bcc6-42f7-8573-a526009fedde",
+      "title": {
+        "resources": [
+          {
+            "mimeType": "text/plain",
+            "text": "Op 0070 (SubSteps)"
+          }
+        ]
+      },
+      "actions": [
+        {
+          "instructions": {
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "Action / SubStep 1. No action specific interactions for this one.  Just a simple example of displaying text."
+              }
+            ]
+          },
+          "references": [
+            {
+              "resources": [
+                {
+                  "id": "426bffbe-bc39-44ee-bedb-0e60e853d7f8",
+                  "mimeType": "image/jpeg",
+                  "url": "fig1.jpg"
+                }
+              ],
+              "id": "426bffbe-bc39-44ee-bedb-0e60e853d7f8"
+            },
+            {
+              "resources": [
+                {
+                  "id": "3990e122-1d94-4d2a-9f95-c448b8d32702",
+                  "mimeType": "image/jpeg",
+                  "url": "fig1_B.jpg"
+                }
+              ],
+              "id": "3990e122-1d94-4d2a-9f95-c448b8d32702"
+            }
+          ],
+          "type": "Verify"
+        },
+        {
+          "instructions": {
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "Action / SubStep 2. This is a freeform data input example for a Substep / Action. <strong>(CaptureString)</strong>"
+              }
+            ]
+          },
+          "references": [
+            {
+              "resources": [
+                {
+                  "id": "f759cd35-31c4-4b57-a968-bd06cbcb6e32",
+                  "mimeType": "image/jpeg",
+                  "url": "fig2.jpg"
+                }
+              ],
+              "id": "f759cd35-31c4-4b57-a968-bd06cbcb6e32"
+            },
+            {
+              "resources": [
+                {
+                  "id": "85893cbb-7e64-46ec-93c3-3746f645472b",
+                  "mimeType": "image/jpeg",
+                  "url": "fig1.jpg"
+                }
+              ],
+              "id": "85893cbb-7e64-46ec-93c3-3746f645472b"
+            },
+            {
+              "resources": [
+                {
+                  "id": "9128fbaa-7764-4e00-9213-951464f4c164",
+                  "mimeType": "image/jpeg",
+                  "url": "fig2_b.jpg"
+                }
+              ],
+              "id": "9128fbaa-7764-4e00-9213-951464f4c164"
+            }
+          ],
+          "type": "Verify",
+          "details": {
+            "type": "CaptureString",
+            "title": {
+              "resources": [
+                {
+                  "mimeType": "text/plain",
+                  "text": "brand"
+                }
+              ]
+            },
+            "ID": "22Brand",
+            "required": true,
+            "maxCaptures": 3,
+            "hint": {
+              "instructions": {
+                "resources": [
+                  {
+                    "mimeType": "text/plain",
+                    "text": "Enter Text here"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "instructions": {
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "Action / SubStep 3. This is an example of Image Capture Substep / Action. <strong>(CaptureImage)</strong>"
+              }
+            ]
+          },
+          "type": "Assemble",
+          "details": {
+            "type": "CaptureImage",
+            "hint": {
+              "resources": [
+                {
+                  "mimeType": "text/plain",
+                  "text": "Say cheese"
+                }
+              ]
+            },
+            "mimeType": "image/jpeg",
+            "ID": "proof",
+            "minCaptures": 2,
+            "required": true
+          },
+          "references": [
+            {
+              "resources": [
+                {
+                  "id": "97d941f0-0c9d-4b0b-96d8-f2d55055f6b1",
+                  "mimeType": "image/jpeg",
+                  "url": "fig3.jpg"
+                }
+              ],
+              "id": "97d941f0-0c9d-4b0b-96d8-f2d55055f6b1"
+            }
+          ]
+        },
+        {
+          "id": "0040_Pre-Heater_Screw_Torque_Check-action",
+          "type": "Tighten",
+          "instructions": {
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "Action / SubStep 4. This is another Substep / Action example of a Number input that must fall within a specific range.  In this case 4.5 - 5.0. <strong>(CaptureNumber)</strong>"
+              }
+            ]
+          },
+          "details": {
+            "type": "CaptureNumber",
+            "title": {
+              "resources": [
+                {
+                  "mimeType": "text/plain",
+                  "text": "Torque"
+                }
+              ]
+            },
+            "ID": "torque",
+            "required": true,
+            "maxCaptures": 3,
+            "minerror": 4.5,
+            "maxerror": 5.1,
+            "minwarn": 4.6,
+            "maxwarn": 5.0,
+            "nominal": 4.8,
+            "units": "Nm",
+            "integer": false,
+            "precision": 2,
+            "hint": {
+              "instructions": {
+                "resources": [
+                  {
+                    "mimeType": "text/plain",
+                    "text": "Torque in Nm"
+                  }
+                ]
+              }
+            }
+          },
+          "references": []
+        },
+        {
+          "id": "0050_Branding_Check_Mack-action",
+          "type": "Verify",
+          "instructions": {
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "Action / SubStep 5. Example of selecting a value, in this case a Consumable used in the process, from a list.  <strong>(CaptureString)</strong>"
+              }
+            ]
+          },
+          "details": {
+            "type": "CaptureString",
+            "title": {
+              "resources": [
+                {
+                  "mimeType": "text/plain",
+                  "text": "Consumable"
+                }
+              ]
+            },
+            "ID": "brand",
+            "required": true,
+            "maxCaptures": 3,
+            "enumerations": [
+              {
+                "display": {
+                  "resources": [
+                    {
+                      "mimeType": "text/plain",
+                      "text": "Elmers"
+                    }
+                  ]
+                },
+                "value": "Elmers"
+              },
+              {
+                "display": {
+                  "resources": [
+                    {
+                      "mimeType": "text/plain",
+                      "text": "E600"
+                    }
+                  ]
+                },
+                "value": "E600"
+              },
+              {
+                "display": {
+                  "resources": [
+                    {
+                      "mimeType": "text/plain",
+                      "text": "Gorilla"
+                    }
+                  ]
+                },
+                "value": "Gorilla"
+              },
+              {
+                "display": {
+                  "resources": [
+                    {
+                      "mimeType": "text/plain",
+                      "text": "Instabond"
+                    }
+                  ]
+                },
+                "value": "Instabond"
+              },
+              {
+                "display": {
+                  "resources": [
+                    {
+                      "mimeType": "text/plain",
+                      "text": "Loctite"
+                    }
+                  ]
+                },
+                "value": "Loctite"
+              }
+            ],
+            "hint": {
+              "instructions": {
+                "resources": [
+                  {
+                    "mimeType": "text/plain",
+                    "text": "select the brand listed on the label"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "0055_SerialNo_Check_Mack-action",
+          "type": "Verify",
+          "instructions": {
+            "resources": [
+              {
+                "mimeType": "text/plain",
+                "text": "Action / SubStep 6. Capture a Number (serial) that must match a predefined pattern.  <strong>(CaptureString- REGEX)</strong>"
+              }
+            ]
+          },
+          "details": {
+            "type": "CaptureString",
+            "tool": "barcode",
+            "title": {
+              "resources": [
+                {
+                  "mimeType": "text/plain",
+                  "text": "Serial Number"
+                }
+              ]
+            },
+            "ID": "serialNumber",
+            "required": true,
+            "regex": "^[0-9]{3}-[0-9]{5}$",
+            "hint": {
+              "instructions": {
+                "resources": [
+                  {
+                    "mimeType": "text/plain",
+                    "text": "Use format 123-45678"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "orgId": "80d2567c-d0b2-4b72-8bc6-e021f579485a",
+  "versionDisplayName": 1
+}
