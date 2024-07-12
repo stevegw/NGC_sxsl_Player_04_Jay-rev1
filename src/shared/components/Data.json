@@ -120,6 +120,26 @@
           "name": "twx-databind"
         }
       ]
+    },
+    {
+      "attributes": {
+        "id": "username",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "username",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "workordernumber",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "workordernumber",
+        "value": ""
+      },
+      "name": "twx-app-param"
     }
   ],
   "name": "twx-app-mdl"

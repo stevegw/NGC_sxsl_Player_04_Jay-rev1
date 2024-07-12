@@ -1,6 +1,7 @@
 // $scope, $element, $attrs, $injector, $sce, $timeout, $http, $ionicPopup, and $ionicPopover services are available
 console.log($scope.app);
 
+
 let viewLoaded = false;
 let readComplete = false;
 
@@ -59,15 +60,152 @@ $scope.readComplete = function (data) {
     $scope.systemFullyInit();
 }
 
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Thingworx request function
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+$rootScope.thingworxRequest = function (value, params , servicename) {
+
+  let appKey = "80d2567c-d0b2-4b72-8bc6-e021f579485a";
+  let workTrackURLprefix  = '/Thingworx/Things/PTCSC.SOWI.WorkTrack.Manager/Services/'
+  let URL = workTrackURLprefix + servicename;
+  
+  try {
+    let headers = {
+      Accept: 'application/json',
+      "Content-Type": 'application/json',
+      appKey: appKey
+    };
+    // Body
+    $http.post(URL, params, {
+      headers: headers,
+    })
+      .then(
+      function (data) {
+        if (data) {
+          $rootScope.logger.output('Completed THX request' , JSON.stringify(data));
+          return data;
+        }
+      },
+      function (status) {
+        $rootScope.logger.output("THX Service " + servicename + " Failure", "Thingworx /PTCSC.SOWI.WorkTrack.Manager/Services/'+ servicename +' service failed!"+ "\n" + "The status returned was:  "+ status + "\n");
+        return undefined;
+      }
+    )
+  } catch (e) {
+    $rootScope.logger.output("THX Service " + servicename + " Failure", 'Check application key or if server is running or error was ' + e);
+    return undefined;
+  }
+
+}
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// GETUSER NAME from Thingworx session (future updates to SOWI would make sense to it get the username rather than passing something it already knows.
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+$rootScope.getUserName = function () {
+  
+  
+  let URL = '/Thingworx/Resources/CurrentSessionInfo/Services/GetCurrentUser';
+  try {
+    let headers = {
+      Accept: 'application/json',
+      "Content-Type": 'application/json',
+      appKey: appKey
+    };
+    // Body
+    $http.post(URL, {
+      headers: headers,
+    })
+      .then(
+      function (data) {
+        if (data.data.rows.length > 0) {
+          $rootScope.logger.output('Completed THX request' , JSON.stringify(data));
+          $scope.app.params.username = data.data.rows[0].result;
+        } else {
+          
+          $rootScope.logger.output("THX Service  GetCurrentUser Failure", 'No user name returned');
+        }
+      },
+      function (status) {
+        $rootScope.logger.output("THX Service GetCurrentUser Failure", "Thingworx /Thingworx/Resources/CurrentSessionInfo/Services/GetCurrentUser service failed!"+ "\n" + "The status returned was:  "+ status + "\n");
+      }
+    )
+  } catch (e) {
+    $rootScope.logger.output("THX Service  GetCurrentUser Failure", 'Check application key or if server is running or error was ' + e);
+  }
+  
+  
+}
+
+
+// GetWorkOrderStatus
+// Returns the status of the work order.
+
+// This service is used to check if the work order is complete or not. 
+// If the work order is complete or cancelled, then the Vuforia app should not allow new sessions for the work order.
+
+// Returns infotable:
+// Success – returns {<workOrderStatus>, “”}
+// Error – returns {“Error”, <explanation>}
+getWorkOrderStatus = function (workOrderNumber) {
+  
+  console.log(">>>> GetWorkOrderStatus: GetWorkOrderStatus");
+  
+  let appKey = "80d2567c-d0b2-4b72-8bc6-e021f579485a";
+  let URL  = '/Thingworx/Things/PTCSC.SOWI.WorkTrack.Manager/Services/GetWorkOrderStatus'
+  let params = {
+      "workOrderNumber": workOrderNumber 
+  };
+  try {
+    let headers = {
+      Accept: 'application/json',
+      "Content-Type": 'application/json',
+      appKey: appKey
+    };
+    // Body
+    $http.post(URL, {
+      headers: headers,
+    })
+      .then(
+      function (data) {
+        if (data.data.rows.length > 0) {
+          $rootScope.logger.output('Completed THX request' , JSON.stringify(data));
+          $scope.app.params.username = data.data.rows[0].result;
+          $scope.app.fn.navigate("Home");
+        } else {
+          
+          $scope.app.fn.navigate("Home");
+        }
+      },
+      function (status) {
+        $rootScope.logger.output("THX Service GetCurrentUser Failure", "Thingworx /Thingworx/Resources/CurrentSessionInfo/Services/GetCurrentUser service failed!"+ "\n" + "The status returned was:  "+ status + "\n");
+      }
+    )
+  } catch (e) {
+    $rootScope.logger.output("THX Service  GetCurrentUser Failure", 'Check application key or if server is running or error was ' + e);
+  }
+  
+}
+
+
+
 //This function will execute each time the view is loaded
 $scope.$on("$ionicView.loaded", function (event) {
     viewLoaded = true;
     $scope.systemFullyInit();
+
 });
 
 
 $scope.systemFullyInit = function () {
     if (readComplete && viewLoaded) {
+        $rootScope.getUserName();              // Added here maybe a better place - tried on view load but that failed was things had not quite completed 
         $scope.checkForScan();
     }
 }
@@ -113,14 +251,27 @@ $scope.scanComplete = function () {
     //Once the scan is complete, we use the obtained value which should be the work order number
     //using the work order number we make the TWX service call to check if this is a new or fresh run
     //
-    $rootScope.logger.output("Scan Complete", "Start.js - scanComplete")
-    let wonum = $scope.view.wdg['scan-1']['scannedValue'];
+
+    let wonum =  $scope.getWidgetProp('scan-1','scannedValue' ); 
+  	$scope.app.params.workordernumber = wonum;
+    $rootScope.logger.output("Scan Complete", "Start.js - scanComplete value=" + wonum);
+
+  
     $rootScope.sxslHelper.setWorkOrder(wonum);    // Store the WorkOrder    
 
     //Make TWX Call and procedure check here
     //Parameters: wonum = Scanned Work Order Number
     //            2     = Start @ step #2 (since Step 1 was scanning a Work Order)
-    $scope.startProcedureSession(wonum, 2);
+    
+  
+    getWorkOrderStatus(wonum);
+    
+
+  
+  	//$scope.startProcedureSession(wonum, 2);
+  
+  
+  
 }
 
 $scope.startProcedureSession = function (wo, ss) {

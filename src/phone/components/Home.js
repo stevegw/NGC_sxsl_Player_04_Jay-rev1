@@ -44,7 +44,7 @@ thingworxRequest = function (value, params , servicename) {
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// 3 main WorkTrack actions
+// Main WorkTrack actions
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
        
@@ -78,6 +78,11 @@ startStep = function () {
   
 }
 
+
+
+
+
+
 // Returns the infotable with {sessionId,  workOrderProcedureStatus, lastFinishedActionId, message}
 startProcedureSession = function () {
   
@@ -99,6 +104,43 @@ startProcedureSession = function () {
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Studio Functions
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//https://pp-2309291349ae.portal.ptc.io/Thingworx/Resources/CurrentSessionInfo/ServiceDefinitions/GetCurrentUser
+
+$scope.getUserName = function () {
+  
+  
+  let URL = '/Thingworx/Resources/CurrentSessionInfo/Services/GetCurrentUser';
+  try {
+    let headers = {
+      Accept: 'application/json',
+      "Content-Type": 'application/json',
+      appKey: appKey
+    };
+    // Body
+    $http.post(URL, {
+      headers: headers,
+    })
+      .then(
+      function (data) {
+        if (data.data.rows.length > 0) {
+          $rootScope.logger.output('Completed THX request' , JSON.stringify(data));
+          $scope.app.params.username = data.data.rows[0].result;
+        } else {
+          
+          $rootScope.logger.output("THX Service  GetCurrentUser Failure", 'No user name returned');
+        }
+      },
+      function (status) {
+        $rootScope.logger.output("THX Service GetCurrentUser Failure", "Thingworx /Thingworx/Resources/CurrentSessionInfo/Services/GetCurrentUser service failed!"+ "\n" + "The status returned was:  "+ status + "\n");
+      }
+    )
+  } catch (e) {
+    $rootScope.logger.output("THX Service  GetCurrentUser Failure", 'Check application key or if server is running or error was ' + e);
+  }
+  
+  
+}
 
 $scope.waitForButton = function (selector) {
     // 
@@ -158,7 +200,7 @@ $scope.$on('statusLogger', function (evt, value) {
   let params = {
       "someinput": value
   };
-  thingworxRequest(value , params , 'testrequest');
+  $rootScope.thingworxRequest(value , params , 'testrequest');
 
 });
 

@@ -249,28 +249,6 @@
                                         {
                                           "attributes": {
                                             "twx-widget": "",
-                                            "widget-id": "column-9",
-                                            "widget-name": "column-9",
-                                            "is-widget-container": "true"
-                                          },
-                                          "name": "twx-col",
-                                          "children": [
-                                            {
-                                              "attributes": {
-                                                "class": "twx-widget-bindings",
-                                                "slot": "bindings",
-                                                "ptc-rendered": ""
-                                              },
-                                              "name": "twx-widget-bindings"
-                                            },
-                                            {
-                                              "name": "twx-container-content"
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          "attributes": {
-                                            "twx-widget": "",
                                             "widget-id": "column-6",
                                             "widget-name": "column-6",
                                             "is-widget-container": "true",
@@ -396,10 +374,10 @@
                                     "widget-name": "popupSteps",
                                     "is-widget-container": "true",
                                     "class": "InfoPanel",
-                                    "width": "40vw",
-                                    "height": "50vh",
+                                    "width": "30vw",
+                                    "height": "30vh",
                                     "centered": "false",
-                                    "top": "50px",
+                                    "top": "45px",
                                     "left": "1px"
                                   },
                                   "name": "twx-popup",
@@ -482,7 +460,10 @@
                                                             "twx-widget": "",
                                                             "widget-id": "column-2",
                                                             "widget-name": "column-2",
-                                                            "is-widget-container": "true"
+                                                            "is-widget-container": "true",
+                                                            "class": "",
+                                                            "justification": "center",
+                                                            "alignment": "center"
                                                           },
                                                           "name": "twx-col",
                                                           "children": [
@@ -495,7 +476,19 @@
                                                               "name": "twx-widget-bindings"
                                                             },
                                                             {
-                                                              "name": "twx-container-content"
+                                                              "name": "twx-container-content",
+                                                              "children": [
+                                                                {
+                                                                  "attributes": {
+                                                                    "twx-widget": "",
+                                                                    "widget-id": "label-8",
+                                                                    "state-format-value": "text",
+                                                                    "widget-name": "label-8",
+                                                                    "text": "Steps Overview"
+                                                                  },
+                                                                  "name": "twx-label"
+                                                                }
+                                                              ]
                                                             }
                                                           ]
                                                         }
@@ -551,7 +544,7 @@
                                                                     "widget-id": "label-3",
                                                                     "state-format-value": "text",
                                                                     "widget-name": "label-3",
-                                                                    "text": "Steps"
+                                                                    "text": "Step"
                                                                   },
                                                                   "name": "twx-label"
                                                                 }
@@ -1300,7 +1293,9 @@
                                                             "twx-widget": "",
                                                             "widget-id": "column-12",
                                                             "widget-name": "column-12",
-                                                            "is-widget-container": "true"
+                                                            "is-widget-container": "true",
+                                                            "justification": "center",
+                                                            "alignment": "flex-start"
                                                           },
                                                           "name": "twx-col",
                                                           "children": [
@@ -1313,7 +1308,75 @@
                                                               "name": "twx-widget-bindings"
                                                             },
                                                             {
-                                                              "name": "twx-container-content"
+                                                              "name": "twx-container-content",
+                                                              "children": [
+                                                                {
+                                                                  "attributes": {
+                                                                    "twx-widget": "",
+                                                                    "widget-id": "label-7",
+                                                                    "state-format-value": "text",
+                                                                    "widget-name": "label-7",
+                                                                    "text": "Username"
+                                                                  },
+                                                                  "name": "twx-label"
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "attributes": {
+                                                            "twx-widget": "",
+                                                            "widget-id": "column-1",
+                                                            "widget-name": "column-1",
+                                                            "is-widget-container": "true",
+                                                            "class": "",
+                                                            "justification": "center",
+                                                            "alignment": "flex-start"
+                                                          },
+                                                          "name": "twx-col",
+                                                          "children": [
+                                                            {
+                                                              "attributes": {
+                                                                "class": "twx-widget-bindings",
+                                                                "slot": "bindings",
+                                                                "ptc-rendered": ""
+                                                              },
+                                                              "name": "twx-widget-bindings"
+                                                            },
+                                                            {
+                                                              "name": "twx-container-content",
+                                                              "children": [
+                                                                {
+                                                                  "attributes": {
+                                                                    "twx-widget": "",
+                                                                    "widget-id": "labelUsername",
+                                                                    "state-format-value": "text",
+                                                                    "widget-name": "labelUsername",
+                                                                    "text": "...."
+                                                                  },
+                                                                  "name": "twx-label",
+                                                                  "children": [
+                                                                    {
+                                                                      "attributes": {
+                                                                        "databind-id": "db-1720801459434",
+                                                                        "source-type": "data",
+                                                                        "source-label": "",
+                                                                        "source-name": "username",
+                                                                        "source-item-type": "value",
+                                                                        "source-item-name": "username",
+                                                                        "source-item-field-name": "",
+                                                                        "binding-type": "custom_field",
+                                                                        "from-expression": "app.params['username']",
+                                                                        "to-property": "text",
+                                                                        "base-type": "",
+                                                                        "shape": ""
+                                                                      },
+                                                                      "name": "twx-databind"
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
                                                             }
                                                           ]
                                                         }

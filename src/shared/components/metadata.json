@@ -29,7 +29,7 @@
       "thingTemplateName": ""
     }
   ],
-  "accessType": "public",
+  "accessType": "private",
   "widgetsUsage": [
     {
       "timestamp": "2024-01-19T23:31:39.380Z",
@@ -443,7 +443,59 @@
       }
     },
     {
-      "timestamp": "2024-07-12T13:54:31.667Z",
+      "timestamp": "2024-07-12T17:16:09.088Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 3,
+        "twx-dt-view": 1,
+        "twx-octosxslplayer": 1,
+        "wdg-wpcoe": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-gridlayout": 5,
+        "twx-row": 21,
+        "twx-col": 33,
+        "twx-image2": 3,
+        "twx-overlay-body": 1,
+        "twx-popup": 3,
+        "twx-label": 10,
+        "twx-repeater": 1,
+        "twx-textarea": 1,
+        "twx-select": 1,
+        "twx-checkbox": 1,
+        "twx-text-input": 1,
+        "twx-button": 1,
+        "twx-barcode-scanner": 1
+      }
+    },
+    {
+      "timestamp": "2024-07-12T17:18:24.948Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 3,
+        "twx-dt-view": 1,
+        "twx-octosxslplayer": 1,
+        "wdg-wpcoe": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-gridlayout": 5,
+        "twx-row": 21,
+        "twx-col": 33,
+        "twx-image2": 3,
+        "twx-overlay-body": 1,
+        "twx-popup": 3,
+        "twx-label": 10,
+        "twx-repeater": 1,
+        "twx-textarea": 1,
+        "twx-select": 1,
+        "twx-checkbox": 1,
+        "twx-text-input": 1,
+        "twx-button": 1,
+        "twx-barcode-scanner": 1
+      }
+    },
+    {
+      "timestamp": "2024-07-12T20:07:33.872Z",
       "action": "LATEST_SAVE",
       "usage": {
         "twx-view": 3,
@@ -458,7 +510,7 @@
         "twx-image2": 3,
         "twx-overlay-body": 1,
         "twx-popup": 3,
-        "twx-label": 8,
+        "twx-label": 11,
         "twx-repeater": 1,
         "twx-textarea": 1,
         "twx-select": 1,
