@@ -5,6 +5,23 @@
   "children": [
     {
       "attributes": {
+        "name": "PTCSC.SOWI.WorkTrack.Manager",
+        "twx-entity-type": "Things",
+        "twx-entity-name": "PTCSC.SOWI.WorkTrack.Manager"
+      },
+      "name": "twx-model",
+      "children": [
+        {
+          "attributes": {
+            "name": "StartProcedureSession",
+            "id": "StartProcedureSession"
+          },
+          "name": "twx-model-service"
+        }
+      ]
+    },
+    {
+      "attributes": {
         "id": "vumark",
         "isbound": "false",
         "isdeletable": "false",

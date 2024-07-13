@@ -3,7 +3,7 @@
   "projectType": "AR",
   "viewType": "ar",
   "fileName": "NGC_sxsl_Player_04_Jay-rev1",
-  "thingworxServer": "http://pp-2309291349ae.portal.ptc.io",
+  "thingworxServer": "http://pp-2407122122tn.portal.ptc.io:8080",
   "viewTemplateFileName": "home-ar.json",
   "state": {
     "orientation": "landscape"
@@ -65,5 +65,6 @@
   "theme": "twx-light",
   "version": "9.20.11.0",
   "designedForOffline": true,
-  "id": "6d01cd7a-1085-4288-9c0b-5bf665f9cca5"
+  "id": "6d01cd7a-1085-4288-9c0b-5bf665f9cca5",
+  "allowSelfSignedCerts": false
 }

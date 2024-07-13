@@ -107,38 +107,42 @@ $rootScope.thingworxRequest = function (value, params , servicename) {
 // GETUSER NAME from Thingworx session (future updates to SOWI would make sense to it get the username rather than passing something it already knows.
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+let appKey = "80d2567c-d0b2-4b72-8bc6-e021f579485a";
+
+let headers = {
+  Accept: 'application/json',
+  "Content-Type": 'application/json',
+  appKey: appKey
+};
 
 $rootScope.getUserName = function () {
   
   
   let URL = '/Thingworx/Resources/CurrentSessionInfo/Services/GetCurrentUser';
-  try {
-    let headers = {
-      Accept: 'application/json',
-      "Content-Type": 'application/json',
-      appKey: appKey
-    };
-    // Body
-    $http.post(URL, {
-      headers: headers,
-    })
-      .then(
-      function (data) {
-        if (data.data.rows.length > 0) {
-          $rootScope.logger.output('Completed THX request' , JSON.stringify(data));
-          $scope.app.params.username = data.data.rows[0].result;
-        } else {
-          
-          $rootScope.logger.output("THX Service  GetCurrentUser Failure", 'No user name returned');
-        }
-      },
-      function (status) {
-        $rootScope.logger.output("THX Service GetCurrentUser Failure", "Thingworx /Thingworx/Resources/CurrentSessionInfo/Services/GetCurrentUser service failed!"+ "\n" + "The status returned was:  "+ status + "\n");
-      }
-    )
-  } catch (e) {
-    $rootScope.logger.output("THX Service  GetCurrentUser Failure", 'Check application key or if server is running or error was ' + e);
-  }
+
+  let headers = {
+    Accept: 'application/json',
+    "Content-Type": 'application/json',
+    appKey: appKey
+  };
+
+  
+  $http.post(URL, {
+    headers: headers,
+  })
+    .then((data) => {
+    if (data.data.rows.length > 0) {
+      console.log('Completed THX GetCurrentUser request' , JSON.stringify(data));
+      $scope.app.params.username = data.data.rows[0].result;
+    } else {
+      console.error('THX Service  GetCurrentUser Failure No user name returned');
+    }
+  })
+    .catch((error) => {
+    console.error('Error with request: ${error.message}');
+  });
+      
+
   
   
 }
@@ -153,43 +157,33 @@ $rootScope.getUserName = function () {
 // Returns infotable:
 // Success – returns {<workOrderStatus>, “”}
 // Error – returns {“Error”, <explanation>}
+
+
 getWorkOrderStatus = function (workOrderNumber) {
   
   console.log(">>>> GetWorkOrderStatus: GetWorkOrderStatus");
-  
-  let appKey = "80d2567c-d0b2-4b72-8bc6-e021f579485a";
   let URL  = '/Thingworx/Things/PTCSC.SOWI.WorkTrack.Manager/Services/GetWorkOrderStatus'
   let params = {
       "workOrderNumber": workOrderNumber 
   };
-  try {
-    let headers = {
-      Accept: 'application/json',
-      "Content-Type": 'application/json',
-      appKey: appKey
-    };
-    // Body
-    $http.post(URL, {
-      headers: headers,
-    })
-      .then(
-      function (data) {
-        if (data.data.rows.length > 0) {
-          $rootScope.logger.output('Completed THX request' , JSON.stringify(data));
-          $scope.app.params.username = data.data.rows[0].result;
-          $scope.app.fn.navigate("Home");
-        } else {
-          
-          $scope.app.fn.navigate("Home");
-        }
-      },
-      function (status) {
-        $rootScope.logger.output("THX Service GetCurrentUser Failure", "Thingworx /Thingworx/Resources/CurrentSessionInfo/Services/GetCurrentUser service failed!"+ "\n" + "The status returned was:  "+ status + "\n");
-      }
-    )
-  } catch (e) {
-    $rootScope.logger.output("THX Service  GetCurrentUser Failure", 'Check application key or if server is running or error was ' + e);
-  }
+  
+  $http.post(URL, {
+    headers: headers,
+  })
+    .then((data) => {
+    if (data.data.rows.length === 0) {
+      console.log('Completed THX GetWorkOrderStatus request no WorkOrder found' , JSON.stringify(data));
+      $scope.app.fn.navigate("Home");
+     
+    } else {
+      
+      // Look at data and decide what to do
+    }
+  })
+    .catch((error) => {
+    console.error('Error with request: ${error.message}');
+  });
+     
   
 }
 
@@ -263,11 +257,9 @@ $scope.scanComplete = function () {
     //Parameters: wonum = Scanned Work Order Number
     //            2     = Start @ step #2 (since Step 1 was scanning a Work Order)
     
-  
     getWorkOrderStatus(wonum);
     
 
-  
   	//$scope.startProcedureSession(wonum, 2);
   
   
